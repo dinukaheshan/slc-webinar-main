@@ -1,4 +1,0 @@
-Webinar - SLC Issues
-
-1.Coming up next section, latest webinar change to a card without background image.
-2.Video section, make video appear larger
