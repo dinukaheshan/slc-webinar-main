@@ -699,6 +699,10 @@ button.more-info-btn:active {
         font-size: 24px;
     }
 
+    .webinar .container-sm {
+        padding: 0 !important;
+    }
+
     .webinar-title {
         font-size: 16px;
         text-align: center !important;
@@ -724,6 +728,10 @@ button.more-info-btn:active {
     button.more-info-btn {
         font-size: 16px;
         padding: 10px 40px;
+    }
+
+    .upcoming-webinars .webinar-details {
+        padding: 10px 0;
     }
 
     .upcoming-webinars .webinar-countdown .countdown .countdown-title {
@@ -775,6 +783,11 @@ button.more-info-btn:active {
         font-size: 12px;
     }
 
+    .webinar-categories.mobile .accordion-button {
+        padding: 15px 0;
+
+    }
+
     .video-card .video-text {
         font-size: 16px;
         line-height: 36px;
@@ -800,6 +813,11 @@ button.more-info-btn:active {
 
     .student-reviews .student-reviews-btn {
         font-size: 14px;
+    }
+
+    .student-reviews .review-1,
+    .student-reviews .review-2 {
+        padding: 10px;
     }
 
     .faqs .faq-title {
