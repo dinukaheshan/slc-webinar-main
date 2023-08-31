@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-    --dark: #535353;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -29,7 +25,7 @@ li {
 }
 
 section {
-    margin: 100px 0;
+    margin-top: 100px;
 }
 
 .section-title {
@@ -41,7 +37,7 @@ section {
 /* Hero Section */
 
 .webinar {
-    background-image: url('./images/hero-background.png');
+    background-image: url('https://southlondoncollege.org/wp-content/uploads/2023/08/hero-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -113,7 +109,7 @@ section {
 }
 
 .featured-webinar {
-    background-image: url('./images/coming-up-bg.png');
+    background-image: url('https://southlondoncollege.org/wp-content/uploads/2023/08/coming-up-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -144,7 +140,7 @@ section {
 .featured-webinar-details ul li {
     display: flex;
     align-items: center;
-    color: var(--dark);
+    color: #535353;
     font-weight: 500;
     column-gap: 12px;
     margin: 8px 0;
@@ -341,10 +337,6 @@ button.more-info-btn:active {
 
 /* Webinar Category Mobile Tabs */
 
-.webinar-categories.mobile {
-    margin-bottom: 200px;
-}
-
 .webinar-categories.mobile .accordion-header {
     display: flex;
     align-items: center;
@@ -355,7 +347,7 @@ button.more-info-btn:active {
     display: block;
     font-size: 24px;
     font-weight: 600;
-    padding: 50px 0;
+    padding: 35px 0;
     border-bottom: #E9EAED 1px solid;
 }
 
@@ -377,7 +369,7 @@ button.more-info-btn:active {
 }
 
 .webinar-categories.mobile .accordion-button {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 
@@ -420,56 +412,94 @@ button.more-info-btn:active {
     cursor: pointer;
 }
 
+/* Student Reviews Section */
 
-/* Student Reviews */
-
-.student-reviews {
-    margin-top: 150px;
+.student-reviews .section-title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: #313B3D;
 }
 
-.student-reviews .student-name {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-    text-align: left;
-    color: #000000;
+.student-reviews #second-slider {
+    padding: 0 60px;
+}
+
+.student-reviews .slider-wrapper {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.student-reviews .prev-next-btns {
+    display: flex !important;
+    align-items: start !important;
+    column-gap: 20px;
+    margin-top: 10px !important;
+    margin-bottom: auto;
+}
+
+.student-reviews #btnPrev,
+.student-reviews #btnNext {
+    background-color: transparent;
+    border: 2px solid #FF9B43;
+    outline: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    color: #FF9B43;
+}
+
+.student-reviews #btnPrev:hover,
+.student-reviews #btnNext:hover {
+    background-color: #FF9B43 !important;
+    color: #ffffff !important;
 }
 
 .student-reviews .review-text {
-    color: #575555;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 29px;
     text-align: left;
+    color: #313B3D;
 }
 
-.student-reviews .stars i {
-    color: #F2DA00;
+.student-reviews .review-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #313B3D;
 }
 
-.student-reviews .student-reviews-btn {
-    color: #FF9B43;
-    padding: 10px 20px;
-    border: 1px solid #FF9B43;
-    background: transparent;
-    transition: all 0.3s ease;
+.student-reviews .review-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #313B3D;
 }
 
-.student-reviews .student-reviews-btn:hover {
-    color: #ffffff;
-    background-color: #FF9B43;
+.student-reviews .box-quote-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-.student-reviews .review-1,
-.student-reviews .review-2 {
-    padding: 30px 10px;
+/* Trustpilot Section */
+
+.trustpilot {
+    margin-top: 60px !important;
+    background: linear-gradient(125.48deg, rgba(10, 164, 189, 0.12) 1.19%, rgba(0, 165, 111, 0.12) 97.8%);
 }
 
-.student-reviews .review-2 {
-    background-color: #FAFDFE;
+.trustpilot .trustpilot-logo {
+    padding: 50px 0 !important;
 }
 
-/* Student Reviews END */
+.trustpilot .trustpilot-logo img {
+    width: 100%;
+}
 
 
 /* FAQs */
@@ -541,6 +571,19 @@ button.more-info-btn:active {
 
 
 /* Media Queries */
+@media (max-width: 1200px) {
+
+    /* Student Reviews Section */
+
+    .student-reviews #second-slider {
+        padding: 0 !important;
+    }
+
+    .student-reviews .prev-next-btns {
+        padding-left: 1rem !important;
+    }
+}
+
 
 @media(max-width: 992px) {
 
@@ -569,7 +612,7 @@ button.more-info-btn:active {
         background-repeat: unset;
         background-size: unset;
         border-radius: unset;
-        margin: 150px 0;
+        margin: 40px 0;
         height: 200px;
     }
 
@@ -599,10 +642,10 @@ button.more-info-btn:active {
     .featured-webinar-info {
         padding: 20px;
         width: 80% !important;
-
     }
 
     .upcoming-webinars .webinar-details {
+        padding: 0 !important;
         grid-template-columns: 1fr;
         justify-content: center;
     }
@@ -645,6 +688,20 @@ button.more-info-btn:active {
     button.more-info-btn {
         padding: 10px 40px;
     }
+
+    /* Student Reviews Section */
+    .student-reviews .splide-container {
+        margin: 14px;
+        border-radius: 28px;
+        padding: 60px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        height: 320px !important;
+    }
+
+    .student-reviews .review-text {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width: 767px) {
@@ -657,6 +714,10 @@ button.more-info-btn:active {
         padding: 0 !important;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .featured-webinar {
+        margin: 150px 0 !important;
     }
 
     .featured-webinar-details {
@@ -686,12 +747,19 @@ button.more-info-btn:active {
         align-items: center;
     }
 
+    /* Student Reviews */
+    .student-reviews .splide-container {
+        height: 350px !important;
+    }
+
 }
 
 @media (max-width: 575px) {
 
     section {
-        margin: 60px 0;
+        margin-top: 60px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
     }
 
     .section-title {
@@ -723,11 +791,12 @@ button.more-info-btn:active {
 
     button.learn-more-btn {
         font-size: 14px;
+        padding: 8px 20px;
     }
 
     button.more-info-btn {
         font-size: 16px;
-        padding: 10px 40px;
+        padding: 8px 20px;
     }
 
     .upcoming-webinars .webinar-details {
@@ -788,6 +857,20 @@ button.more-info-btn:active {
 
     }
 
+    .webinar-categories .wrapper {
+        margin-bottom: 0 !important;
+    }
+
+    /* Video */
+
+    .video {
+        margin-top: 80px !important;
+    }
+
+    .video .play-btn {
+        width: 10%;
+    }
+
     .video-card .video-text {
         font-size: 16px;
         line-height: 36px;
@@ -798,26 +881,50 @@ button.more-info-btn:active {
         font-size: 14px;
     }
 
-    .student-reviews {
-        margin-top: 50px !important;
+    /* Student Reviews Section */
+
+    .student-reviews .review-text {
+        width: 100%;
+        margin: 0 auto;
     }
 
-
-    .student-reviews .student-name {
-        font-size: 16px;
+    .student-reviews .section-title {
+        font-size: 24px;
+        margin-bottom: 20px !important;
     }
 
     .student-reviews .review-text {
+        font-size: 20px;
+    }
+
+    .student-reviews .review-name {
+        font-size: 16px;
+    }
+
+    .student-reviews .review-title {
         font-size: 14px;
     }
 
-    .student-reviews .student-reviews-btn {
+    .student-reviews .review-text {
+        font-size: 16px;
+    }
+
+    .student-reviews .review-name {
         font-size: 14px;
     }
 
-    .student-reviews .review-1,
-    .student-reviews .review-2 {
-        padding: 10px;
+    .student-reviews .splide-container {
+        height: 275px !important;
+    }
+
+    .student-reviews .prev-next-btns {
+        display: none !important;
+    }
+
+    .student-reviews #btnPrev,
+    .student-reviews #btnNext {
+        border: 2px solid #FF9B43;
+        padding: 2px 6px;
     }
 
     .faqs .faq-title {
@@ -830,7 +937,14 @@ button.more-info-btn:active {
 
     .faqs .faqs-btn {
         font-size: 14px;
-
+        padding: 8px 20px;
     }
+}
 
+@media (max-width: 475px) {
+
+    /* Student Reviews */
+    .student-reviews .splide-container {
+        padding: 40px 20px;
+    }
 }

@@ -51,12 +51,53 @@
 })();
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const closeButton = document.querySelector('.close-btn');
-    const video = document.getElementById('myVideo');
+// Play / Close video player
+function playVideo(videoId) {
+    var video = document.getElementById(videoId);
+    video.currentTime = 0; // Reset video to start
+    video.play();
+}
 
-    closeButton.addEventListener('click', function () {
-        // Pause the video
-        video.pause();
-    });
+function pauseVideo(videoId) {
+    var video = document.getElementById(videoId);
+    video.pause();
+    video.currentTime = 0;
+}
+
+document.querySelector("#play-btn").addEventListener("click", function () {
+    playVideo("video");
+});
+
+document.querySelector("#close-btn").addEventListener("click", function () {
+    pauseVideo("video");
+});
+
+
+// Review Slider
+
+const slider1 = new Splide('#first-slider', {
+    type: 'loop',
+    perPage: 1,
+    perMove: 1,
+    pagination: false,
+    arrows: false,
+    focus: 0,
+    breakpoints: {
+        991: {
+            perPage: 1,
+        },
+        767: {
+            perPage: 1,
+        }
+    }
+});
+
+slider1.mount();
+
+btnNext.addEventListener('click', e => {
+    slider1.go('+1');
+});
+
+btnPrev.addEventListener('click', e => {
+    slider1.go('-1');
 });

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Webinar Main Page</title>
 </head>
@@ -15,7 +16,7 @@
 
     <!-- Hero Section -->
     <section class="webinar">
-        <div class="container-sm webinar-hero">
+        <div class="container webinar-hero">
             <div class="hero-details d-flex flex-column row-gap-4 justify-content-center align-items-center align-items-lg-start px-3 px-lg-0 mx-auto text-center text-lg-start">
                 <div class="hero-title">
                     All webinars
@@ -36,14 +37,14 @@
                 </form>
             </div>
             <div class="hero-person align-self-end justify-content-lg-end d-none d-lg-flex">
-                <img src="images/person.png" alt="">
+                <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/person.png" alt="">
             </div>
         </div>
     </section>
 
-    <div class="container-sm">
-        <!--Coming Up Next Section -->
-        <section class="upcoming-webinars">
+    <!--Coming Up Next Section -->
+    <section class="upcoming-webinars">
+        <div class="container">
             <div class="title col-md-12">
                 <p class="section-title">Coming up next</p>
             </div>
@@ -91,7 +92,7 @@
                         <p class="webinar-description">Take advantage of our FREE Live Webinars and build your professional skillset! Join us as we revolutionise the world of educational webinars....</p>
                         <button type="button" class="btn learn-more-btn">Learn more</button>
                     </div>
-                    <div class="webinar-countdown d-flex flex-column my-sm-5 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="webinar-countdown d-flex flex-column my-sm-3 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
                         <p class="header">Webinar starts in</p>
                         <div class="countdown">
                             <ul>
@@ -104,7 +105,7 @@
                                 <li><span class="seconds"></span><span class=countdown-title>Seconds</span></li>
                             </ul>
                         </div>
-                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-4 mt-lg-0">
+                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-0 mt-md-4 mt-lg-0">
                             <li>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.0091 14.8881H1.34577C0.60111 14.8881 0 14.287 0 13.5423V2.77619C0 2.03153 0.60111 1.43042 1.34577 1.43042H13.0091C13.7538 1.43042 14.3549 2.03153 14.3549 2.77619V13.5423C14.3549 14.287 13.7538 14.8881 13.0091 14.8881ZM1.34577 2.3276C1.09456 2.3276 0.897179 2.52498 0.897179 2.77619V13.5423C0.897179 13.7936 1.09456 13.9909 1.34577 13.9909H13.0091C13.2603 13.9909 13.4577 13.7936 13.4577 13.5423V2.77619C13.4577 2.52498 13.2603 2.3276 13.0091 2.3276H1.34577Z" fill="#6E6E6E" />
@@ -130,7 +131,7 @@
                         <p class="webinar-description">Take advantage of our FREE Live Webinars and build your professional skillset! Join us as we revolutionise the world of educational webinars....</p>
                         <button type="button" class="btn learn-more-btn">Learn more</button>
                     </div>
-                    <div class="webinar-countdown d-flex flex-column my-sm-5 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="webinar-countdown d-flex flex-column my-sm-3 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
                         <p class="header">Webinar starts in</p>
                         <div class="countdown">
                             <ul>
@@ -143,7 +144,7 @@
                                 <li><span class="seconds"></span><span class=countdown-title>Seconds</span></li>
                             </ul>
                         </div>
-                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-4 mt-lg-0">
+                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-0 mt-md-4 mt-lg-0">
                             <li>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.0091 14.8881H1.34577C0.60111 14.8881 0 14.287 0 13.5423V2.77619C0 2.03153 0.60111 1.43042 1.34577 1.43042H13.0091C13.7538 1.43042 14.3549 2.03153 14.3549 2.77619V13.5423C14.3549 14.287 13.7538 14.8881 13.0091 14.8881ZM1.34577 2.3276C1.09456 2.3276 0.897179 2.52498 0.897179 2.77619V13.5423C0.897179 13.7936 1.09456 13.9909 1.34577 13.9909H13.0091C13.2603 13.9909 13.4577 13.7936 13.4577 13.5423V2.77619C13.4577 2.52498 13.2603 2.3276 13.0091 2.3276H1.34577Z" fill="#6E6E6E" />
@@ -169,7 +170,7 @@
                         <p class="webinar-description">Take advantage of our FREE Live Webinars and build your professional skillset! Join us as we revolutionise the world of educational webinars....</p>
                         <button type="button" class="btn learn-more-btn">Learn more</button>
                     </div>
-                    <div class="webinar-countdown d-flex flex-column my-sm-5 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
+                    <div class="webinar-countdown d-flex flex-column my-sm-3 my-lg-0 justify-content-center align-items-center justify-content-lg-start align-items-lg-start">
                         <p class="header">Webinar starts in</p>
                         <div class="countdown">
                             <ul>
@@ -182,7 +183,7 @@
                                 <li><span class="seconds"></span><span class=countdown-title>Seconds</span></li>
                             </ul>
                         </div>
-                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-4 mt-lg-0">
+                        <ul class="information list-unstyled d-flex flex-column row-gap-3 mt-0 mt-md-4 mt-lg-0">
                             <li>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.0091 14.8881H1.34577C0.60111 14.8881 0 14.287 0 13.5423V2.77619C0 2.03153 0.60111 1.43042 1.34577 1.43042H13.0091C13.7538 1.43042 14.3549 2.03153 14.3549 2.77619V13.5423C14.3549 14.287 13.7538 14.8881 13.0091 14.8881ZM1.34577 2.3276C1.09456 2.3276 0.897179 2.52498 0.897179 2.77619V13.5423C0.897179 13.7936 1.09456 13.9909 1.34577 13.9909H13.0091C13.2603 13.9909 13.4577 13.7936 13.4577 13.5423V2.77619C13.4577 2.52498 13.2603 2.3276 13.0091 2.3276H1.34577Z" fill="#6E6E6E" />
@@ -201,10 +202,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Web View - Tab Content -->
-        <section class="webinar-categories web d-none d-md-block">
+    <!-- Web View - Tab Content -->
+    <section class="webinar-categories web d-none d-md-block">
+        <div class="container">
             <ul class="nav nav-tabs d-flex column-gap-5 justify-content-center w-100" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pearson-tab" data-bs-toggle="tab" data-bs-target="#pearson-tab-pane" type="button" role="tab" aria-controls="pearson-pane" aria-selected="true">Pearson BTEC</button>
@@ -614,11 +617,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Mobile View - Accordion -->
-        <!-- TODO Decrease button padding. Active tab padding with background is too big -->
-        <section class="webinar-categories d-block d-md-none mobile">
+    <!-- Mobile View - Accordion -->
+    <!-- TODO Decrease button padding. Active tab padding with background is too big -->
+    <section class="webinar-categories d-block d-md-none mobile">
+        <div class="container">
             <div class="accordion accordion-flush" id="accordionCategoriesExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -1042,10 +1047,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Video -->
-        <section class="video">
+    <!-- Video -->
+    <section class="video">
+        <div class="container">
             <div class="video-card p-0 d-flex flex-column flex-lg-row">
                 <div class="col-12 col-lg-6 video-text-container d-flex flex-column row-gap-0 row-gap-lg-4 order-2 order-lg-1">
                     <div class="video-text d-flex flex-column justify-content-center justify-content-lg-start mt-5 mt-lg-0 text-center text-lg-start row-gap-3 row-gap-lg-5 mx-3 px-5">
@@ -1053,82 +1060,114 @@
                         <div class="col-12 mt-0 mt-lg-3 info-button my-5 my-lg-0 text-center text-lg-start mx-auto flex justify-content-center">
                             <button type="button" class="d-flex align-items-center mx-auto mx-lg-0 column-gap-3 btn more-info-btn mb-lg-4">
                                 <span>More Info</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                                    <path d="M1.17685 11L7 6L1.17685 1" stroke="white" stroke-width="" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 video-player bg-black position-relative order-1 order-lg-2">
-                    <img width="100%" src="images/video-thumbnail.png">
+                    <img width="100%" src="https://southlondoncollege.org/wp-content/uploads/2023/08/video-thumbnail.png">
                     <!-- First modal dialog -->
                     <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <video controls autoplay id="myVideo">
-                                    <source src="images/demo-video.mp4" type="video/mp4">
+                                <video controls autoplay id="video">
+                                    <source src="https://southlondoncollege.org/wp-content/uploads/2023/08/demo-video.mp4" type="video/mp4">
                                 </video>
-                                <img src="images/close.png" class="close-btn" data-bs-dismiss="modal">
+                                <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/close.png" id="close-btn" class="close-btn" data-bs-dismiss="modal">
                             </div>
                         </div>
                     </div>
                     <!-- Open first dialog -->
-                    <img src="images/play.png" data-bs-toggle="modal" href="#modal" role="button" class="play-btn">
+                    <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/play.png" id="play-btn" data-bs-toggle="modal" href="#modal" role="button" class="play-btn">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Student Reviews Section -->
-        <section class="student-reviews">
-            <div class="d-flex flex-column row-gap-5 my-5 justify-content-center align-items-center">
-                <div class="section-title text-center">Student reviews</div>
-                <div class="review-1 d-flex flex-column align-items-center align-items-lg-start flex-lg-row row-gap-5 row-gap-lg-0 column-gap-5">
-                    <div class="student-img">
-                        <img class="rounded-circle" src="images/reviews-person-1.png" alt="person1">
-                    </div>
-                    <div class="review d-flex flex-column align-items-center align-items-lg-start row-gap-3 text-center text-lg-start row-gap-4 row-gap-lg-3">
-                        <div class="student-name">Mike Perry</div>
-                        <div class="review-text text-center text-lg-start">“South London College makes learning easy for students.
-                            Upon registering for my choice of course, I received the course almost immediately.
-                            I could get started as soon as I wanted to South London College makes learning easy for students.
-                            Upon registering for my choice of course, I received the course almost immediately. I could get started as soon as I wanted to”</div>
-                        <div class="stars d-flex column-gap-2">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+    <!-- Student Reviews Section -->
+    <section class="student-reviews">
+        <div class="container-sm">
+            <div class="section-title text-center text-lg-start">
+                What our students say
+            </div>
+            <div class="slider-section col-12 d-flex column-gap-4 column-gap-xl-5 ">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <img class="box-quote-img" src="https://southlondoncollege.org/wp-content/uploads/2023/08/bxs_quote-left.png" alt="">
+                </div>
+                <div class="slider-wrapper col-12 col-lg-10 d-flex align-items-center flex-column flex-lg-row">
+                    <div id="first-slider" class="splide splide_2 col-12 col-lg-9 col-xl-10">
+                        <div class="splide__track ms-auto">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The courses were well mapped out and easy to navigate. I was impressed by the customer support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/review-person-1.png" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Kevin Watson</div>
+                                                <div class="review-title">Business Analyst</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="https://southlondoncollege.org/wp-content/uploads/2023/08/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            The curriculum was thoughtfully organized, and I appreciated the prompt assistance from their support team.
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/review-person-2.png" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">Sarah Walter</div>
+                                                <div class="review-title">Project Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="https://southlondoncollege.org/wp-content/uploads/2023/08/bxs_quote-left.png" alt="" width="75">
+
+                                    </div>
+                                </div>
+                                <div class="splide__slide">
+                                    <div class="splide-container position-relative">
+                                        <div class="review-text text-center text-lg-start">
+                                            Navigating the course content was a breeze, and the customer support exceeded my expectations
+                                        </div>
+                                        <div class="d-flex align-items-center column-gap-3 pt-5 justify-content-center justify-content-lg-start text-center text-lg-start mx-auto mx-lg-0">
+                                            <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/review-person-3.png" alt="" class="rounded-circle object-fit-cover">
+                                            <div class="review-details">
+                                                <div class="review-name">David Cruz</div>
+                                                <div class="review-title">Business Manager</div>
+                                            </div>
+                                        </div>
+                                        <img class="d-none d-sm-block d-lg-none position-absolute top-0 start-0 m-4" src="https://southlondoncollege.org/wp-content/uploads/2023/08/bxs_quote-left.png" alt="" width="75">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="review-2 d-flex flex-column align-items-center align-items-lg-start flex-lg-row row-gap-5 row-gap-lg-0 column-gap-5">
-                    <div class="student-img">
-                        <img class="rounded-circle" src="images/reviews-person-2.png" alt="person2">
+                    <div class="d-flex align-items-start prev-next-btns col-auto col-lg-3 col-xl-2 ps-lg-4 ps-0">
+                        <button id="btnPrev" class="d-flex align-items-center mt-4 mt-sm-0"><i class="fa-solid fa-angle-left fs-5"></i></button>
+                        <button id="btnNext" class="d-flex align-items-center mt-4 mt-sm-0"><i class="fa-solid fa-angle-right fs-5"></i></button>
                     </div>
-                    <div class="review d-flex flex-column align-items-center align-items-lg-start row-gap-3 text-center text-lg-start row-gap-4 row-gap-lg-3">
-                        <div class="student-name">Mike Perry</div>
-                        <div class="review-text text-center text-lg-start">“South London College makes learning easy for students.
-                            Upon registering for my choice of course, I received the course almost immediately.
-                            I could get started as soon as I wanted to South London College makes learning easy for students.
-                            Upon registering for my choice of course, I received the course almost immediately. I could get started as soon as I wanted to”</div>
-                        <div class="stars d-flex column-gap-2">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto my-lg-5 my-0 mb-5">
-                    <a class="student-reviews-btn rounded text-decoration-none" href="#">View All</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Faqs -->
-        <section class="faqs">
+    <!-- Trustpilot Section -->
+    <section class="trustpilot">
+        <div class="container-sm">
+            <div class="trustpilot-logo d-flex justify-content-center mx-auto col-12 col-lg-6">
+                <img src="https://southlondoncollege.org/wp-content/uploads/2023/08/trustpilot-img.png" alt="truspilot-log">
+            </div>
+        </div>
+    </section>
+
+    <!-- Faqs -->
+    <section class="faqs">
+        <div class="container">
             <div class="section-title text-center mb-5">FAQs</div>
             <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -1162,13 +1201,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto my-5 d-flex justify-content-center">
+            <div class="col-auto my-3 my-sm-5 d-flex justify-content-center">
                 <a class="faqs-btn rounded text-decoration-none" href="#">View All</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="script.js"></script>
 </body>
 
