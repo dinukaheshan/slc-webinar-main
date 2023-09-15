@@ -67,19 +67,20 @@ section {
 .webinar .search-input input {
     background: transparent !important;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 0 10px 20px;
     width: 300px !important;
     border: 1px solid #ffffff;
     font-size: 18px;
+    ;
 }
 
 .webinar .search-input .search-btn {
     background: #FF9B43;
-    padding: 10px 30px;
+    padding: 10px 15px;
     color: #ffffff;
     font-weight: 500;
     border: none;
-    font-size: 18px;
+    font-size: 20.57px;
 }
 
 .webinar .search-input input::placeholder {
@@ -171,8 +172,10 @@ button.learn-more-btn {
     background-color: #0AA4BD;
     color: #ffffff;
     margin-top: 10px;
-    padding: 10px 60px;
+    padding: 10px 30px;
     border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif !important;
 }
 
 button.learn-more-btn:hover,
@@ -323,10 +326,11 @@ button.learn-more-btn:active {
 button.more-info-btn {
     background-color: #0AA4BD;
     color: #ffffff;
-    padding: 10px 60px;
+    padding: 10px 40px;
     border-radius: 8px;
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Jost', sans-serif !important;
 }
 
 button.more-info-btn:hover,
@@ -378,6 +382,7 @@ button.more-info-btn:active {
 .video-card {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 100px 0px #0AA4BD40;
+
 }
 
 .video-card .video-text-container {
@@ -395,13 +400,24 @@ button.more-info-btn:active {
     color: #535353;
 }
 
+.video-card .video-player .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
 .play-btn {
     position: absolute;
     width: 60px;
-    left: 50%;
+    left: 48%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform .3s;
     cursor: pointer;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
 }
 
 .close-btn {
@@ -436,7 +452,7 @@ button.more-info-btn:active {
     display: flex !important;
     align-items: start !important;
     column-gap: 20px;
-    margin-top: 10px !important;
+    margin-top: 50px;
     margin-bottom: auto;
 }
 
@@ -457,7 +473,7 @@ button.more-info-btn:active {
 }
 
 .student-reviews .review-text {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 29px;
     text-align: left;
@@ -485,6 +501,7 @@ button.more-info-btn:active {
     object-fit: cover;
     object-position: bottom;
 }
+
 
 /* Trustpilot Section */
 
@@ -554,6 +571,7 @@ button.more-info-btn:active {
     border: 1px solid #FF9B43;
     background: transparent;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .faqs .faqs-btn:hover {
@@ -566,11 +584,24 @@ button.more-info-btn:active {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230AA4BD' stroke='%230AA4BD' stroke-width='1'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
+.faqs .accordion-body {
+    padding: 4px 20px !important;
+}
+
 /* FAQs END */
 
 
 
 /* Media Queries */
+@media (max-width: 1400px) {
+
+    /* Student Review Section */
+    .student-reviews .prev-next-btns {
+        margin-top: 30px;
+    }
+}
+
+
 @media (max-width: 1200px) {
 
     /* Student Reviews Section */
@@ -581,7 +612,9 @@ button.more-info-btn:active {
 
     .student-reviews .prev-next-btns {
         padding-left: 1rem !important;
+        margin-top: 10px;
     }
+
 }
 
 
